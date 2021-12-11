@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<link href="/favicon.ico" rel="shortcut icon">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Xterm.js</title>
+    <meta name="description" content="Terminal front-end component written in JavaScript that works in the browser.">
+    <!-- Social media cards start -->
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:url" content="http://xtermjs.org/" />
+    <meta property="og:title" content="Xterm.js" />
+    <meta property="og:description" content="Terminal front-end component written in JavaScript that works in the browser." />
+    <!-- Social media cards end -->
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://xtermjs.org/">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/47de3a5ce8.js"></script>
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <span class="navbar-brand breadcrumbs">
+                        <a href="/">xterm.js</a>
+                    </span>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/docs">Docs</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li>
+                        <a href="https://github.com/xtermjs/xterm.js">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- /.container-fluid -->
+        </nav>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="home">
+                        <div class="logo">
+                            <img src="/images/logo-full.png">
+                        </div>
+                        <div class="description">
+                            <p>Build terminals in the browser</p>
+                        </div>
+                        <div class="npm-install">
+                            <div class="text">npm install xterm</div>
+                            <button class="copy" title="Copy to clipboard" onclick="navigator.clipboard.writeText('npm install xterm'); document.querySelector('.copy').textContent = '\u2713'">Copy
+                        </div>
+                    </div>
+                    <div class="demo">
+                        <div class="inner"></div>
+                    </div>
+                    <link rel="stylesheet" href="https://unpkg.com/xterm@4.15.0-beta.10/css/xterm.css" />
+                    <style>
+                    .xterm-viewport.xterm-viewport {
+                        scrollbar-width: thin;
+                    }
+
+                    .xterm-viewport::-webkit-scrollbar {
+                        width: 10px;
+                    }
+
+                    .xterm-viewport::-webkit-scrollbar-track {
+                        opacity: 0.5;
+                    }
+
+                    .xterm-viewport::-webkit-scrollbar-thumb {
+                        min-height: 20px;
+                        background-color: #ffffff20;
+                    }
+                    </style>
+                    <script src="https://unpkg.com/xterm@4.15.0-beta.10/lib/xterm.js"></script>
+                    <script src="https://unpkg.com/xterm-addon-webgl@0.12.0-beta.15/lib/xterm-addon-webgl.js"></script>
+                    <script src="/js/demo.js"></script>
+                    <h2 id="getting-started">Getting Started</h2>
+
+                    <p>First you need to install the module, we ship exclusively through <a href="https://www.npmjs.com/">npm</a> so you need that installed and then add xterm.js as a dependency by running:</p>
+                </div>
+    </div>
+    </section>
+    </main>
+    </div>
+</body>
+
+</html>
